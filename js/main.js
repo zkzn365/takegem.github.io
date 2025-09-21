@@ -6,10 +6,16 @@ const translations = {
         'language': '中文',
         
         // 导航
+        'nav.home': '首页',
+        'nav.terms': '服务条款',
+        'nav.privacy': '隐私政策',
+        'nav.rules': '使用规则',
+        'nav.compliance': '合规声明',
         'nav.features': '功能特点',
         'nav.howItWorks': '如何使用',
         'nav.faq': '常见问题',
         'nav.download': '立即下载',
+        'nav.language': '语言切换',
         
         // 英雄区
         'hero.title': '钻领钻晶，轻松赚取积分',
@@ -44,14 +50,19 @@ const translations = {
         'howItWorks.step4.title': '兑换奖励',
         'howItWorks.step4.description': '积分达到2000即可兑换奖励（约20美元）',
         
-        // FAQ
-        'faq.title': '常见问题',
-        'faq.howToEarn': '如何赚取积分？',
-        'faq.whatArePoints': '积分有什么用？',
-        'faq.whyNotArrived': '为什么积分没到账？',
-        'faq.howToWithdraw': '如何提现或兑换奖励？',
-        'faq.whyCantWatch': '为什么无法观看广告？',
-        'faq.howToInvite': '如何邀请好友赚取奖励？',
+        // FAQ部分
+        'faq.howToEarnPoints': '如何赚取积分？',
+        'faq.whatArePointsUsedFor': '积分有什么用？',
+        'faq.whyPointsNotArrived': '为什么积分没到账？',
+        'faq.howToWithdrawRewards': '如何提现或兑换奖励？',
+        'faq.whyCantWatchAds': '为什么无法观看广告？',
+        'faq.howToInviteFriends': '如何邀请好友赚取奖励？',
+        'faq.howToEarnAnswer': '您可以通过以下方式赚取积分：\n1. 观看激励视频广告\n2. 完成每日任务\n3. 邀请好友（您好友每日赚取积分的10%将作为奖励发放给您）\n4. 参与平台活动\n5. 好友通过您的邀请链接注册并完成首次广告观看（您将获得额外邀请奖励）',
+        'faq.whatArePointsAnswer': '积分可按照兑换比例换取奖励。具体规则：\n1. 兑换比例：100积分=1美元\n2. 最低提现门槛：2000积分（相当于20美元）\n3. 兑换类型包括：电子礼品卡、现金提现、应用内虚拟物品及实物商品（以库存为准）',
+        'faq.whyNotArrivedAnswer': '积分未到账可能有以下原因：\n1. 广告观看未完成或被系统判定为无效观看\n2. 网络延迟导致数据同步延迟（请等待5分钟并刷新）\n3. 邀请奖励需满足：好友当日产生有效积分且账号状态正常\n4. 账号异常或存在作弊行为\n5. 系统维护期间\n\n如问题持续存在，您可通过反馈功能提交详情。',
+        'faq.howToWithdrawAnswer': '当您的积分达到最低兑换标准（2000积分=20美元）时，可按以下步骤操作：\n1. 进入"我的积分"页面\n2. 选择"兑换奖励"并根据提示选择兑换方式（现金/礼品卡等）\n3. 提交兑换申请等待审核（通常24小时内完成）\n\n注：兑换后积分将自动扣除。虚拟奖励即时到账，现金提现到账时间取决于支付渠道（通常1-3个工作日）。',
+        'faq.whyCantWatchAnswer': '无法观看广告的可能原因：\n1. 网络连接不稳定或速度过慢\n2. 广告资源临时不足（请稍后再试）\n3. 达到每日观看上限（可参考"任务中心"每日观看次数）\n4. 设备存储空间不足或应用权限未开启（需允许"网络"和"存储"权限）\n5. 应用版本过低（请更新至最新版本）',
+        'faq.howToInviteAnswer': '邀请好友步骤及奖励说明：\n1. 进入"邀请好友"页面获取您的专属邀请码或分享链接\n2. 好友通过您的链接/邀请码注册并登录\n3. 奖励机制：\n   - 好友完成首次广告观看：您和好友各得50积分\n   - 长期奖励：您将自动获得好友每日通过广告赚取积分的10%作为奖励（无上限，好友越活跃，您获得的奖励越多）\n\n奖励将在好友产生积分次日自动发放至您的账户，您可在"积分明细"中查看。',
         
         // 下载区域
         'download.title': '立即下载，开始赚取积分',
@@ -67,9 +78,14 @@ const translations = {
         'footer.quickLinks': '快速链接',
         'footer.legal': '法律信息',
         'footer.contact': '联系我们',
-        'footer.privacyPolicy': '隐私政策',
-        'footer.termsOfService': '使用条款',
+        'footer.terms': '使用条款',
+        'footer.privacy': '隐私政策',
         'footer.rules': '积分规则',
+        'footer.compliance': '合规声明',
+        'footer.appSupport': '应用内反馈',
+        'footer.rights': '保留所有权利',
+        'footer.slogan': 'TakeGem, 赚取钻石积分',
+        'footer.links': '快速链接',
         'footer.copyright': '© 2024 钻领钻晶. 保留所有权利。',
         
         // 使用规则
@@ -140,7 +156,53 @@ const translations = {
         'privacy.contact.rule1': '如有隐私相关问题，请联系我们',
         'privacy.contact.rule2': '邮箱：privacy@takegem.com',
         'privacy.contact.rule3': '电话：400-123-4567',
-        'privacy.contact.rule4': '我们将在48小时内回复您的询问'
+        'privacy.contact.rule4': '我们将在48小时内回复您的询问',
+        
+        // 合规声明
+        'compliance.title': '合规声明 - TakeGem',
+        'compliance.heading': '合规声明',
+        'compliance.subtitle': '我们对国际数据保护标准和法规合规的承诺',
+        'compliance.lastUpdated': '最后更新：2025年1月',
+        'compliance.gdpr.title': 'GDPR合规（欧盟）',
+        'compliance.gdpr.intro': 'TakeGem完全符合欧盟实施的通用数据保护条例（GDPR）。我们确保为所有欧洲用户提供最高标准的数据保护。',
+        'compliance.gdpr.point1': '合法依据：我们仅在GDPR第6条规定的合法依据下处理个人数据',
+        'compliance.gdpr.point2': '数据主体权利：全面支持访问、更正、删除、可携带性和反对权',
+        'compliance.gdpr.point3': '数据保护官：指定DPO处理隐私相关询问',
+        'compliance.gdpr.point4': '违规通知：建立72小时违规通知程序',
+        'compliance.coppa.title': 'COPPA合规（美国）',
+        'compliance.coppa.intro': '我们严格遵守《儿童在线隐私保护法》（COPPA），保护13岁以下儿童的隐私。',
+        'compliance.coppa.point1': '年龄验证：强大的年龄验证机制防止未成年人注册',
+        'compliance.coppa.point2': '家长同意：13岁以下用户需要可验证的家长同意',
+        'compliance.coppa.point3': '有限数据收集：在家长监督下最小化收集儿童数据',
+        'compliance.coppa.point4': '安全港：参与FTC批准的安全港计划',
+        'compliance.ccpa.title': 'CCPA合规（加利福尼亚）',
+        'compliance.ccpa.intro': 'TakeGem遵守《加利福尼亚消费者隐私法》（CCPA）和《加利福尼亚隐私权法》（CPRA），为加州居民提供增强的隐私权。',
+        'compliance.ccpa.point1': '知情权：透明披露个人信息收集和使用情况',
+        'compliance.ccpa.point2': '删除权：可以请求删除个人信息',
+        'compliance.ccpa.point3': '选择退出权：可选择退出个人信息销售',
+        'compliance.ccpa.point4': '非歧视：无论隐私选择如何都提供平等服务',
+        'compliance.international.title': '国际标准',
+        'compliance.international.pipeda': 'PIPEDA（加拿大）',
+        'compliance.international.pipeda.desc': '遵守《个人信息保护和电子文档法》，保护加拿大用户。',
+        'compliance.international.lgpd': 'LGPD（巴西）',
+        'compliance.international.lgpd.desc': '遵守《通用数据保护法》，保护巴西用户数据。',
+        'compliance.international.pdpa': 'PDPA（新加坡）',
+        'compliance.international.pdpa.desc': '遵守《个人数据保护法》，保护新加坡用户。',
+        'compliance.international.appi': 'APPI（日本）',
+        'compliance.international.appi.desc': '遵守《个人信息保护法》，保护日本用户。',
+        'compliance.security.title': '安全认证',
+        'compliance.security.iso27001': 'ISO 27001',
+        'compliance.security.iso27001.desc': '信息安全管理',
+        'compliance.security.soc2': 'SOC 2 Type II',
+        'compliance.security.soc2.desc': '服务组织控制',
+        'compliance.security.pci': 'PCI DSS',
+        'compliance.security.pci.desc': '支付卡行业标准',
+        'compliance.contact.title': '合规联系',
+        'compliance.contact.intro': '如有合规相关询问、数据保护问题或行使隐私权，请联系我们的专门合规团队：',
+        'compliance.contact.email.label': '邮箱：',
+        'compliance.contact.dpo.label': '数据保护官：',
+        'compliance.contact.response.label': '响应时间：',
+        'compliance.contact.response.time': '大多数请求在30天内回复'
     },
     'en': {
         // 应用名称
@@ -148,10 +210,16 @@ const translations = {
         'language': 'English',
         
         // 导航
+        'nav.home': 'Home',
+        'nav.terms': 'Terms',
+        'nav.privacy': 'Privacy',
+        'nav.rules': 'Rules',
+        'nav.compliance': 'Compliance',
         'nav.features': 'Features',
         'nav.howItWorks': 'How It Works',
         'nav.faq': 'FAQ',
         'nav.download': 'Download',
+        'nav.language': 'Language Switch',
         
         // 英雄区
         'hero.title': 'TakeGem, Earn Diamond Points Easily',
@@ -186,14 +254,20 @@ const translations = {
         'howItWorks.step4.title': 'Redeem Rewards',
         'howItWorks.step4.description': 'Redeem rewards when points reach 2000 (about $20)',
         
-        // FAQ
+        // FAQ部分
         'faq.title': 'Frequently Asked Questions',
-        'faq.howToEarn': 'How to earn points?',
-        'faq.whatArePoints': 'What are points used for?',
-        'faq.whyNotArrived': 'Why haven\'t my points arrived?',
-        'faq.howToWithdraw': 'How to withdraw or redeem rewards?',
-        'faq.whyCantWatch': 'Why can\'t I watch ads?',
-        'faq.howToInvite': 'How to invite friends to earn rewards?',
+        'faq.howToEarnPoints': 'How to earn points?',
+        'faq.whatArePointsUsedFor': 'What are points used for?',
+        'faq.whyPointsNotArrived': 'Why haven\'t my points arrived?',
+        'faq.howToWithdrawRewards': 'How to withdraw or redeem rewards?',
+        'faq.whyCantWatchAds': 'Why can\'t I watch ads?',
+        'faq.howToInviteFriends': 'How to invite friends to earn rewards?',
+        'faq.howToEarnAnswer': 'You can earn points through the following ways:\n1. Watch rewarded video ads\n2. Complete daily tasks\n3. Invite friends (you get 10% of your friends\' daily earnings as rewards)\n4. Participate in platform activities\n5. Friends register through your invitation link and complete their first ad watch (you get extra invitation rewards)',
+        'faq.whatArePointsAnswer': 'Points can be exchanged for rewards according to the conversion ratio. Specific rules:\n1. Conversion ratio: 100 points = $1 USD\n2. Minimum withdrawal threshold: 2000 points (equivalent to $20 USD)\n3. Redemption types include: electronic gift cards, cash withdrawal, in-app virtual items, and physical goods (subject to inventory)',
+        'faq.whyNotArrivedAnswer': 'Points may not arrive for the following reasons:\n1. Ad viewing incomplete or deemed invalid by the system\n2. Network delay causing data sync delay (please wait 5 minutes and refresh)\n3. Invitation rewards require: friends generate valid points on the day and account status is normal\n4. Account anomaly or cheating behavior detected\n5. During system maintenance\n\nIf the problem persists, you can submit details through the feedback function.',
+        'faq.howToWithdrawAnswer': 'When your points reach the minimum redemption standard (2000 points = $20 USD), you can follow these steps:\n1. Go to "My Points" page\n2. Select "Redeem Rewards" and choose redemption method according to prompts (cash/gift cards, etc.)\n3. Submit redemption request and wait for review (usually completed within 24 hours)\n\nNote: Points will be automatically deducted after redemption. Virtual rewards arrive instantly, cash withdrawal arrival time depends on payment channel (usually 1-3 business days).',
+        'faq.whyCantWatchAnswer': 'Possible reasons for being unable to watch ads:\n1. Unstable network connection or slow speed\n2. Temporary shortage of ad resources (please try again later)\n3. Daily viewing limit reached (refer to "Task Center" for daily viewing count)\n4. Insufficient device storage or app permissions not enabled (need to allow "Network" and "Storage" permissions)\n5. App version too old (please update to the latest version)',
+        'faq.howToInviteAnswer': 'Friend invitation steps and reward explanation:\n1. Go to "Invite Friends" page to get your exclusive invitation code or share link\n2. Friends register and log in through your link/invitation code\n3. Reward mechanism:\n   - Friend completes first ad watch: You and your friend each get 50 points\n   - Long-term rewards: You automatically get 10% of your friends\' daily ad earnings as rewards (no limit, the more active your friends, the more rewards you get)\n\nRewards will be automatically distributed to your account the day after friends generate points. You can check in "Points Details".',
         
         // 下载区域
         'download.title': 'Download Now, Start Earning Points',
@@ -209,9 +283,14 @@ const translations = {
         'footer.quickLinks': 'Quick Links',
         'footer.legal': 'Legal',
         'footer.contact': 'Contact Us',
-        'footer.privacyPolicy': 'Privacy Policy',
-        'footer.termsOfService': 'Terms of Service',
+        'footer.terms': 'Terms of Service',
+        'footer.privacy': 'Privacy Policy',
         'footer.rules': 'Point Rules',
+        'footer.compliance': 'Compliance Statement',
+        'footer.appSupport': 'In-App Feedback',
+        'footer.rights': 'All rights reserved',
+        'footer.slogan': 'TakeGem, Earn Diamond Points',
+        'footer.links': 'Quick Links',
         'footer.copyright': '© 2024 TakeGem. All rights reserved.',
         
         // 使用规则
@@ -282,7 +361,53 @@ const translations = {
         'privacy.contact.rule1': 'If you have privacy-related questions, please contact us',
         'privacy.contact.rule2': 'Email: privacy@takegem.com',
         'privacy.contact.rule3': 'Phone: +1-800-123-4567',
-        'privacy.contact.rule4': 'We will respond to your inquiries within 48 hours'
+        'privacy.contact.rule4': 'We will respond to your inquiries within 48 hours',
+        
+        // 合规声明
+        'compliance.title': 'Compliance Statement - TakeGem',
+        'compliance.heading': 'Compliance Statement',
+        'compliance.subtitle': 'Our commitment to international data protection standards and regulatory compliance',
+        'compliance.lastUpdated': 'Last Updated: January 2025',
+        'compliance.gdpr.title': 'GDPR Compliance (EU)',
+        'compliance.gdpr.intro': 'TakeGem is fully compliant with the General Data Protection Regulation (GDPR) as implemented by the European Union. We ensure the highest standards of data protection for all our European users.',
+        'compliance.gdpr.point1': 'Lawful Basis: We process personal data only when we have a lawful basis under Article 6 of GDPR',
+        'compliance.gdpr.point2': 'Data Subject Rights: Full support for access, rectification, erasure, portability, and objection rights',
+        'compliance.gdpr.point3': 'Data Protection Officer: Appointed DPO available for privacy-related inquiries',
+        'compliance.gdpr.point4': 'Breach Notification: 72-hour breach notification procedures in place',
+        'compliance.coppa.title': 'COPPA Compliance (US)',
+        'compliance.coppa.intro': 'We strictly adhere to the Children\'s Online Privacy Protection Act (COPPA) to protect the privacy of children under 13 years of age.',
+        'compliance.coppa.point1': 'Age Verification: Robust age verification mechanisms to prevent underage registration',
+        'compliance.coppa.point2': 'Parental Consent: Verifiable parental consent required for users under 13',
+        'compliance.coppa.point3': 'Limited Data Collection: Minimal data collection from children with parental oversight',
+        'compliance.coppa.point4': 'Safe Harbor: Participation in FTC-approved safe harbor programs',
+        'compliance.ccpa.title': 'CCPA Compliance (California)',
+        'compliance.ccpa.intro': 'TakeGem complies with the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), providing California residents with enhanced privacy rights.',
+        'compliance.ccpa.point1': 'Right to Know: Transparent disclosure of personal information collection and use',
+        'compliance.ccpa.point2': 'Right to Delete: Ability to request deletion of personal information',
+        'compliance.ccpa.point3': 'Right to Opt-Out: Option to opt-out of personal information sales',
+        'compliance.ccpa.point4': 'Non-Discrimination: Equal service regardless of privacy choices',
+        'compliance.international.title': 'International Standards',
+        'compliance.international.pipeda': 'PIPEDA (Canada)',
+        'compliance.international.pipeda.desc': 'Compliance with Personal Information Protection and Electronic Documents Act for Canadian users.',
+        'compliance.international.lgpd': 'LGPD (Brazil)',
+        'compliance.international.lgpd.desc': 'Adherence to Lei Geral de Proteção de Dados for Brazilian user data protection.',
+        'compliance.international.pdpa': 'PDPA (Singapore)',
+        'compliance.international.pdpa.desc': 'Compliance with Personal Data Protection Act for Singapore-based users.',
+        'compliance.international.appi': 'APPI (Japan)',
+        'compliance.international.appi.desc': 'Adherence to Act on Protection of Personal Information for Japanese users.',
+        'compliance.security.title': 'Security Certifications',
+        'compliance.security.iso27001': 'ISO 27001',
+        'compliance.security.iso27001.desc': 'Information Security Management',
+        'compliance.security.soc2': 'SOC 2 Type II',
+        'compliance.security.soc2.desc': 'Service Organization Control',
+        'compliance.security.pci': 'PCI DSS',
+        'compliance.security.pci.desc': 'Payment Card Industry Standards',
+        'compliance.contact.title': 'Compliance Contact',
+        'compliance.contact.intro': 'For compliance-related inquiries, data protection questions, or to exercise your privacy rights, please contact our dedicated compliance team:',
+        'compliance.contact.email.label': 'Email:',
+        'compliance.contact.dpo.label': 'Data Protection Officer:',
+        'compliance.contact.response.label': 'Response Time:',
+        'compliance.contact.response.time': 'Within 30 days for most requests'
     }
 };
 
@@ -303,9 +428,12 @@ function updatePageText() {
     });
     
     // 更新语言切换按钮文本
-    const langBtn = document.getElementById('languageBtn');
+    const langBtn = document.getElementById('language-toggle');
     if (langBtn) {
-        langBtn.textContent = t('language');
+        const langSpan = langBtn.querySelector('[data-i18n="language"]');
+        if (langSpan) {
+            langSpan.textContent = t('language');
+        }
     }
 }
 
@@ -368,7 +496,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // 绑定语言切换按钮事件
-    const langBtn = document.getElementById('languageBtn');
+    const langBtn = document.getElementById('language-toggle');
     if (langBtn) {
         langBtn.addEventListener('click', switchLanguage);
     }

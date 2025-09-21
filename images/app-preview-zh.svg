@@ -1,58 +1,58 @@
 <svg width="300" height="600" viewBox="0 0 300 600" xmlns="http://www.w3.org/2000/svg">
-  <!-- Phone Frame -->
+  <!-- 手机外框 -->
   <rect x="10" y="10" width="280" height="580" rx="30" ry="30" fill="#1f2937" stroke="#374151" stroke-width="2"/>
   
-  <!-- Screen -->
+  <!-- 屏幕 -->
   <rect x="25" y="40" width="250" height="520" rx="15" ry="15" fill="#ffffff"/>
   
-  <!-- Status Bar -->
+  <!-- 状态栏 -->
   <rect x="25" y="40" width="250" height="30" rx="15" ry="15" fill="#1e40af"/>
   <text x="40" y="58" fill="white" font-family="Arial" font-size="12">9:41</text>
   <text x="230" y="58" fill="white" font-family="Arial" font-size="12">100%</text>
   
-  <!-- App Header -->
+  <!-- 应用标题栏 -->
   <rect x="25" y="70" width="250" height="50" fill="#3b82f6"/>
-  <text x="50" y="100" fill="white" font-family="Arial" font-size="16" font-weight="bold">TakeGem</text>
+  <text x="50" y="100" fill="white" font-family="Arial" font-size="16" font-weight="bold">钻领钻晶</text>
   <text x="200" y="100" fill="#fbbf24" font-family="Arial" font-size="14">💎 1,250</text>
   
-  <!-- Main Content Area -->
+  <!-- 主要内容区域 -->
   <rect x="35" y="130" width="230" height="80" rx="10" fill="#f3f4f6" stroke="#e5e7eb"/>
-  <text x="50" y="155" fill="#374151" font-family="Arial" font-size="14" font-weight="bold">Daily Tasks</text>
-  <text x="50" y="175" fill="#6b7280" font-size="12">Watch Ad Videos</text>
-  <text x="50" y="190" fill="#6b7280" font-size="12">Progress: 3/5</text>
+  <text x="50" y="155" fill="#374151" font-family="Arial" font-size="14" font-weight="bold">今日任务</text>
+  <text x="50" y="175" fill="#6b7280" font-size="12">观看广告视频</text>
+  <text x="50" y="190" fill="#6b7280" font-size="12">完成度: 3/5</text>
   <rect x="200" y="160" width="50" height="25" rx="12" fill="#10b981"/>
   <text x="215" y="177" fill="white" font-size="10">+50💎</text>
   
-  <!-- Ad Area -->
+  <!-- 广告区域 -->
   <rect x="35" y="220" width="230" height="120" rx="10" fill="#1f2937"/>
-  <text x="50" y="245" fill="white" font-family="Arial" font-size="12">Ad Video</text>
+  <text x="50" y="245" fill="white" font-family="Arial" font-size="12">广告视频</text>
   <circle cx="150" cy="280" r="25" fill="#3b82f6"/>
   <polygon points="140,270 140,290 165,280" fill="white"/>
-  <text x="50" y="325" fill="#9ca3af" font-size="10">Watch full video to earn points</text>
+  <text x="50" y="325" fill="#9ca3af" font-size="10">观看完整视频获得积分奖励</text>
   
-  <!-- Function Buttons -->
+  <!-- 功能按钮 -->
   <rect x="35" y="350" width="110" height="40" rx="8" fill="#f59e0b"/>
-  <text x="65" y="375" fill="white" font-size="12" font-weight="bold">Invite Friends</text>
+  <text x="70" y="375" fill="white" font-size="12" font-weight="bold">邀请好友</text>
   
   <rect x="155" y="350" width="110" height="40" rx="8" fill="#8b5cf6"/>
-  <text x="180" y="375" fill="white" font-size="12" font-weight="bold">Redeem Rewards</text>
+  <text x="190" y="375" fill="white" font-size="12" font-weight="bold">兑换奖励</text>
   
-  <!-- Points History -->
-  <text x="50" y="420" fill="#374151" font-family="Arial" font-size="14" font-weight="bold">Recent Earnings</text>
+  <!-- 积分历史 -->
+  <text x="50" y="420" fill="#374151" font-family="Arial" font-size="14" font-weight="bold">最近收益</text>
   
   <rect x="35" y="430" width="230" height="30" fill="#f9fafb"/>
-  <text x="50" y="450" fill="#6b7280" font-size="11">Watch Ad +25💎</text>
-  <text x="200" y="450" fill="#9ca3af" font-size="10">2 min ago</text>
+  <text x="50" y="450" fill="#6b7280" font-size="11">观看广告 +25💎</text>
+  <text x="200" y="450" fill="#9ca3af" font-size="10">2分钟前</text>
   
   <rect x="35" y="465" width="230" height="30" fill="#f9fafb"/>
-  <text x="50" y="485" fill="#6b7280" font-size="11">Complete Task +50💎</text>
-  <text x="190" y="485" fill="#9ca3af" font-size="10">1 hour ago</text>
+  <text x="50" y="485" fill="#6b7280" font-size="11">完成任务 +50💎</text>
+  <text x="200" y="485" fill="#9ca3af" font-size="10">1小时前</text>
   
   <rect x="35" y="500" width="230" height="30" fill="#f9fafb"/>
-  <text x="50" y="520" fill="#6b7280" font-size="11">Friend Invite +100💎</text>
-  <text x="200" y="520" fill="#9ca3af" font-size="10">Yesterday</text>
+  <text x="50" y="520" fill="#6b7280" font-size="11">好友邀请 +100💎</text>
+  <text x="200" y="520" fill="#9ca3af" font-size="10">昨天</text>
   
-  <!-- Bottom Navigation -->
+  <!-- 底部导航 -->
   <rect x="25" y="540" width="250" height="20" fill="#f3f4f6"/>
   <circle cx="75" cy="550" r="3" fill="#3b82f6"/>
   <circle cx="150" cy="550" r="3" fill="#9ca3af"/>
