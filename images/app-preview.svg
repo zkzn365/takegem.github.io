@@ -1,60 +1,108 @@
 <svg width="300" height="600" viewBox="0 0 300 600" xmlns="http://www.w3.org/2000/svg">
-  <!-- Phone Frame -->
-  <rect x="10" y="10" width="280" height="580" rx="30" ry="30" fill="#1f2937" stroke="#374151" stroke-width="2"/>
+  <!-- Define gradients and patterns -->
+  <defs>
+    <linearGradient id="diamondGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gemGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="sparkle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Phone Frame with diamond-like edges -->
+  <rect x="10" y="10" width="280" height="580" rx="30" ry="30" fill="url(#diamondGradient)" stroke="#1e40af" stroke-width="3"/>
   
   <!-- Screen -->
   <rect x="25" y="40" width="250" height="520" rx="15" ry="15" fill="#ffffff"/>
   
-  <!-- Status Bar -->
-  <rect x="25" y="40" width="250" height="30" rx="15" ry="15" fill="#1e40af"/>
+  <!-- Status Bar with diamond pattern -->
+  <rect x="25" y="40" width="250" height="30" rx="15" ry="15" fill="url(#diamondGradient)"/>
   <text x="40" y="58" fill="white" font-family="Arial" font-size="12">9:41</text>
   <text x="230" y="58" fill="white" font-family="Arial" font-size="12">100%</text>
   
-  <!-- App Header -->
-  <rect x="25" y="70" width="250" height="50" fill="#3b82f6"/>
-  <text x="50" y="100" fill="white" font-family="Arial" font-size="16" font-weight="bold">TakeGem</text>
-  <text x="200" y="100" fill="#fbbf24" font-family="Arial" font-size="14">💎 1,250</text>
+  <!-- App Header with enhanced diamond theme -->
+  <rect x="25" y="70" width="250" height="50" fill="url(#diamondGradient)"/>
   
-  <!-- Main Content Area -->
-  <rect x="35" y="130" width="230" height="80" rx="10" fill="#f3f4f6" stroke="#e5e7eb"/>
-  <text x="50" y="155" fill="#374151" font-family="Arial" font-size="14" font-weight="bold">Daily Tasks</text>
-  <text x="50" y="175" fill="#6b7280" font-size="12">Watch Ad Videos</text>
-  <text x="50" y="190" fill="#6b7280" font-size="12">Progress: 3/5</text>
-  <rect x="200" y="160" width="50" height="25" rx="12" fill="#10b981"/>
-  <text x="215" y="177" fill="white" font-size="10">+50💎</text>
+  <!-- Diamond logo icon -->
+  <polygon points="45,85 50,95 55,105 50,115 45,105 40,95" fill="url(#gemGradient)" stroke="#ffffff" stroke-width="1"/>
+  <polygon points="45,85 50,95 55,105" fill="#fbbf24" opacity="0.7"/>
+  <circle cx="47" cy="92" r="1" fill="url(#sparkle)"/>
   
-  <!-- Ad Area -->
-  <rect x="35" y="220" width="230" height="120" rx="10" fill="#1f2937"/>
+  <text x="65" y="100" fill="white" font-family="Arial" font-size="16" font-weight="bold">TakeGem</text>
+  
+  <!-- Enhanced gem counter with diamond shape -->
+  <polygon points="190,85 200,95 210,105 200,115 190,105 180,95" fill="url(#gemGradient)" stroke="#ffffff" stroke-width="1"/>
+  <polygon points="190,85 200,95 210,105" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="195" cy="92" r="1" fill="url(#sparkle)"/>
+  <text x="220" y="100" fill="#fbbf24" font-family="Arial" font-size="14" font-weight="bold">1,250</text>
+  
+  <!-- Main Content Area with diamond accents -->
+  <rect x="35" y="130" width="230" height="80" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="50" y="155" fill="#1e293b" font-family="Arial" font-size="14" font-weight="bold">Daily Tasks</text>
+  <text x="50" y="175" fill="#64748b" font-size="12">Watch Ad Videos</text>
+  <text x="50" y="190" fill="#64748b" font-size="12">Progress: 3/5</text>
+  
+  <!-- Diamond reward button -->
+  <rect x="190" y="160" width="60" height="25" rx="12" fill="url(#gemGradient)"/>
+  <polygon points="200,167 203,170 206,173 203,176 200,173 197,170" fill="#ffffff" opacity="0.9"/>
+  <text x="210" y="177" fill="white" font-size="10" font-weight="bold">+50</text>
+  
+  <!-- Ad Area with diamond frame -->
+  <rect x="35" y="220" width="230" height="120" rx="10" fill="#0f172a" stroke="url(#diamondGradient)" stroke-width="2"/>
   <text x="50" y="245" fill="white" font-family="Arial" font-size="12">Ad Video</text>
-  <circle cx="150" cy="280" r="25" fill="#3b82f6"/>
-  <polygon points="140,270 140,290 165,280" fill="white"/>
-  <text x="50" y="325" fill="#9ca3af" font-size="10">Watch full video to earn points</text>
   
-  <!-- Function Buttons -->
-  <rect x="35" y="350" width="110" height="40" rx="8" fill="#f59e0b"/>
+  <!-- Diamond play button -->
+  <circle cx="150" cy="280" r="25" fill="url(#gemGradient)"/>
+  <polygon points="140,270 140,290 165,280" fill="white"/>
+  <circle cx="145" cy="275" r="2" fill="url(#sparkle)"/>
+  <circle cx="155" cy="285" r="1.5" fill="url(#sparkle)"/>
+  
+  <text x="50" y="325" fill="#94a3b8" font-size="10">Watch full video to earn diamond points</text>
+  
+  <!-- Function Buttons with diamond styling -->
+  <rect x="35" y="350" width="110" height="40" rx="8" fill="url(#gemGradient)" stroke="#ffffff" stroke-width="1"/>
+  <polygon points="50,365 53,368 56,371 53,374 50,371 47,368" fill="#ffffff" opacity="0.8"/>
   <text x="65" y="375" fill="white" font-size="12" font-weight="bold">Invite Friends</text>
   
-  <rect x="155" y="350" width="110" height="40" rx="8" fill="#8b5cf6"/>
-  <text x="180" y="375" fill="white" font-size="12" font-weight="bold">Redeem Rewards</text>
+  <rect x="155" y="350" width="110" height="40" rx="8" fill="#8b5cf6" stroke="#ffffff" stroke-width="1"/>
+  <polygon points="170,365 173,368 176,371 173,374 170,371 167,368" fill="#ffffff" opacity="0.8"/>
+  <text x="185" y="375" fill="white" font-size="12" font-weight="bold">Redeem Rewards</text>
   
-  <!-- Points History -->
-  <text x="50" y="420" fill="#374151" font-family="Arial" font-size="14" font-weight="bold">Recent Earnings</text>
+  <!-- Points History with diamond icons -->
+  <text x="50" y="420" fill="#1e293b" font-family="Arial" font-size="14" font-weight="bold">Recent Earnings</text>
   
-  <rect x="35" y="430" width="230" height="30" fill="#f9fafb"/>
-  <text x="50" y="450" fill="#6b7280" font-size="11">Watch Ad +25💎</text>
-  <text x="200" y="450" fill="#9ca3af" font-size="10">2 min ago</text>
+  <rect x="35" y="430" width="230" height="30" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <polygon points="45,440 48,443 51,446 48,449 45,446 42,443" fill="url(#gemGradient)"/>
+  <text x="60" y="450" fill="#475569" font-size="11">Watch Ad +25</text>
+  <text x="200" y="450" fill="#94a3b8" font-size="10">2 min ago</text>
   
-  <rect x="35" y="465" width="230" height="30" fill="#f9fafb"/>
-  <text x="50" y="485" fill="#6b7280" font-size="11">Complete Task +50💎</text>
-  <text x="190" y="485" fill="#9ca3af" font-size="10">1 hour ago</text>
+  <rect x="35" y="465" width="230" height="30" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <polygon points="45,475 48,478 51,481 48,484 45,481 42,478" fill="url(#gemGradient)"/>
+  <text x="60" y="485" fill="#475569" font-size="11">Complete Task +50</text>
+  <text x="190" y="485" fill="#94a3b8" font-size="10">1 hour ago</text>
   
-  <rect x="35" y="500" width="230" height="30" fill="#f9fafb"/>
-  <text x="50" y="520" fill="#6b7280" font-size="11">Friend Invite +100💎</text>
-  <text x="200" y="520" fill="#9ca3af" font-size="10">Yesterday</text>
+  <rect x="35" y="500" width="230" height="30" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <polygon points="45,510 48,513 51,516 48,519 45,516 42,513" fill="url(#gemGradient)"/>
+  <text x="60" y="520" fill="#475569" font-size="11">Friend Invite +100</text>
+  <text x="200" y="520" fill="#94a3b8" font-size="10">Yesterday</text>
   
-  <!-- Bottom Navigation -->
-  <rect x="25" y="540" width="250" height="20" fill="#f3f4f6"/>
-  <circle cx="75" cy="550" r="3" fill="#3b82f6"/>
-  <circle cx="150" cy="550" r="3" fill="#9ca3af"/>
-  <circle cx="225" cy="550" r="3" fill="#9ca3af"/>
+  <!-- Bottom Navigation with diamond accents -->
+  <rect x="25" y="540" width="250" height="20" fill="url(#diamondGradient)" opacity="0.1"/>
+  <polygon points="72,547 75,550 78,553 75,556 72,553 69,550" fill="url(#gemGradient)"/>
+  <circle cx="150" cy="550" r="3" fill="#94a3b8"/>
+  <circle cx="225" cy="550" r="3" fill="#94a3b8"/>
+  
+  <!-- Floating diamond sparkles -->
+  <circle cx="80" cy="180" r="1" fill="url(#sparkle)" opacity="0.6"/>
+  <circle cx="220" cy="250" r="1.5" fill="url(#sparkle)" opacity="0.4"/>
+  <circle cx="60" cy="300" r="1" fill="url(#sparkle)" opacity="0.5"/>
+  <circle cx="240" cy="380" r="1" fill="url(#sparkle)" opacity="0.7"/>
 </svg>

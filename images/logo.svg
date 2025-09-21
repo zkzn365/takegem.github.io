@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-  <!-- 钻石图标 -->
+  <defs>
+    <!-- 圆形渐变 -->
+    <radialGradient id="circleGradient" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#FEF3C7;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#FCD34D;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 圆形图标 -->
   <g transform="translate(10, 10)">
-    <polygon points="20,0 40,20 20,40 0,20" fill="#1A365D" />
-    <polygon points="20,5 35,20 20,35 5,20" fill="#FFD700" />
+    <circle cx="20" cy="20" r="18" fill="url(#circleGradient)" />
+    <text x="20" y="28" 
+          font-family="Arial, sans-serif" 
+          font-size="20" 
+          font-weight="bold" 
+          fill="#FFFFFF" 
+          text-anchor="middle">$</text>
   </g>
   
   <!-- TakeGem 文字 -->

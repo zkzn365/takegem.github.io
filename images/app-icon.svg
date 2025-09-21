@@ -1,0 +1,51 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient - Deep Blue -->
+    <radialGradient id="backgroundGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- 金色渐变 -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FEF3C7;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#FCD34D;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 圆形渐变 -->
+    <radialGradient id="circleGradient" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#FEF3C7;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#FCD34D;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- 阴影滤镜 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    </filter>
+  </defs>
+  
+  <!-- 背景圆 -->
+  <circle cx="128" cy="128" r="120" fill="url(#backgroundGradient)" filter="url(#shadow)"/>
+  
+  <!-- 主圆形设计 -->
+  <g transform="translate(128,128)">
+    <!-- 主圆形 -->
+    <circle cx="0" cy="0" r="70" 
+            fill="url(#circleGradient)" 
+            filter="url(#shadow)"/>
+    
+    <!-- 中央美元符号 -->
+    <text x="0" y="15" 
+          font-family="Arial, sans-serif" 
+          font-size="60" 
+          font-weight="bold" 
+          fill="#FFFFFF" 
+          text-anchor="middle">$</text>
+  </g>
+</svg>

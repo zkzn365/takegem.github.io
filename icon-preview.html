@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App图标预览 - 钻石美元主题</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 40px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #1e293b;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .preview-card {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border: 2px solid #e2e8f0;
+        }
+        
+        .preview-card h3 {
+            color: #374151;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .icon-sizes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .icon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .icon-container img {
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .icon-label {
+            font-size: 0.9rem;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        
+        .ios-preview {
+            background: linear-gradient(135deg, #000000, #1a1a1a);
+            color: white;
+        }
+        
+        .android-preview {
+            background: linear-gradient(135deg, #4285f4, #34a853);
+            color: white;
+        }
+        
+        .web-preview {
+            background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+            color: #374151;
+        }
+        
+        .description {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .feature {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .feature h4 {
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💎 钻石美元 App 图标预览</h1>
+        
+        <div class="preview-grid">
+            <div class="preview-card ios-preview">
+                <h3>iOS 平台预览</h3>
+                <div class="icon-sizes">
+                    <div class="icon-container">
+                        <img src="images/app-icon.svg" width="180" height="180" alt="iOS Large">
+                        <span class="icon-label">180x180</span>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/app-icon.svg" width="120" height="120" alt="iOS Medium">
+                        <span class="icon-label">120x120</span>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/app-icon.svg" width="60" height="60" alt="iOS Small">
+                        <span class="icon-label">60x60</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="preview-card android-preview">
+                <h3>Android 平台预览</h3>
+                <div class="icon-sizes">
+                    <div class="icon-container">
+                        <img src="images/app-icon.svg" width="192" height="192" alt="Android Large">
+                        <span class="icon-label">192x192</span>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/app-icon.svg" width="144" height="144" alt="Android Medium">
+                        <span class="icon-label">144x144</span>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/app-icon.svg" width="72" height="72" alt="Android Small">
+                        <span class="icon-label">72x72</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="preview-card web-preview">
+                <h3>Web 平台预览</h3>
+                <div class="icon-sizes">
+                    <div class="icon-container">
+                        <img src="images/app-icon.svg" width="256" height="256" alt="Web Large">
+                        <span class="icon-label">256x256</span>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/app-icon.svg" width="128" height="128" alt="Web Medium">
+                        <span class="icon-label">128x128</span>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/app-icon.svg" width="64" height="64" alt="Web Small">
+                        <span class="icon-label">64x64</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="description">
+            <h3>🎯 设计理念</h3>
+            <p>这个图标完美融合了<strong>钻石</strong>和<strong>美元符号</strong>的视觉元素，一眼就能让用户联想到"赚钱"的核心概念。钻石象征着珍贵和价值，美元符号直接传达财富收益，两者结合创造出强烈的视觉冲击力。</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h4>💎 钻石主题</h4>
+                <p>立体钻石造型，多层次渐变色彩，营造奢华质感</p>
+            </div>
+            <div class="feature">
+                <h4>💰 美元符号</h4>
+                <p>醒目的白色美元符号，直接传达赚钱概念</p>
+            </div>
+            <div class="feature">
+                <h4>✨ 视觉效果</h4>
+                <p>闪烁星光、阴影效果，增强吸引力</p>
+            </div>
+            <div class="feature">
+                <h4>📱 多平台适配</h4>
+                <p>SVG矢量格式，在各种尺寸下都保持清晰</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
