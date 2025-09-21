@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- 钻石图标 -->
+  <g transform="translate(10, 10)">
+    <polygon points="20,0 40,20 20,40 0,20" fill="#1A365D" />
+    <polygon points="20,5 35,20 20,35 5,20" fill="#FFD700" />
+  </g>
+  
+  <!-- TakeGem 文字 -->
+  <g transform="translate(60, 35)" fill="#1A365D">
+    <text font-family="Inter, sans-serif" font-weight="700" font-size="24">
+      <tspan fill="#1A365D">Take</tspan><tspan fill="#FFD700">Gem</tspan>
+    </text>
+  </g>
+</svg>

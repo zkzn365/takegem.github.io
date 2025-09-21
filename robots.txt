@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://takegem.github.io/sitemap.xml
+
+# Disallow crawling of certain file types
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /images/
+
+# Allow important pages
+Allow: /
+Allow: /rules.html
+Allow: /privacy.html

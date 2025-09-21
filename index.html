@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TakeGem - Professional ad reward app. Earn money by watching ads easily. Safe, reliable, fast withdrawal. Download now and start earning!">
+    <meta name="keywords" content="earn money from ads,watch ads earn money,mobile earning,reward app,TakeGem,ad revenue,online earning">
+    <meta name="author" content="TakeGem Team">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1A365D">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://takegem.github.io/">
+    <meta property="og:title" content="TakeGem - Professional Ad Reward App">
+    <meta property="og:description" content="Earn money by watching ads easily. Safe, reliable, fast withdrawal. Download now and start earning!">
+    <meta property="og:image" content="https://takegem.github.io/images/app-preview.svg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://takegem.github.io/">
+    <meta property="twitter:title" content="TakeGem - Professional Ad Reward App">
+    <meta property="twitter:description" content="Earn money by watching ads easily. Safe, reliable, fast withdrawal. Download now and start earning!">
+    <meta property="twitter:image" content="https://takegem.github.io/images/app-preview.svg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://takegem.github.io/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+    
+    <title>TakeGem - Professional Ad Reward App | Watch Ads Earn Money</title>
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#1A365D',
+                        'secondary': '#FFD700',
+                        'accent': '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "TakeGem",
+        "description": "Professional ad reward app. Earn money by watching ads easily.",
+        "url": "https://takegem.github.io/",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Android, iOS",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "15000"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "TakeGem Team"
+        }
+    }
+    </script>
+</head>
+<body class="font-roboto text-gray-800 bg-gray-50">
+    <!-- 导航栏 -->
+    <header class="bg-gradient-to-r from-cyan-700 via-blue-700 to-indigo-700 text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="images/logo.svg" alt="TakeGem Logo" class="h-10 w-auto">
+                <span class="ml-3 text-xl font-bold font-inter" data-i18n="appName">钻领钻晶</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#features" class="hover:text-yellow-300 transition-colors" data-i18n="nav.features">功能特点</a>
+                <a href="#how-it-works" class="hover:text-yellow-300 transition-colors" data-i18n="nav.howItWorks">如何使用</a>
+                <a href="#faq" class="hover:text-yellow-300 transition-colors" data-i18n="nav.faq">常见问题</a>
+                <a href="#download" class="hover:text-yellow-300 transition-colors" data-i18n="nav.download">立即下载</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <button id="language-toggle" class="text-sm border border-white/30 rounded-full px-3 py-1 hover:bg-white/10 transition-colors">
+                    <span data-i18n="language">中文</span>
+                </button>
+                
+                <button class="md:hidden" id="mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-indigo-800 px-4 py-2">
+            <a href="#features" class="block py-2 hover:text-yellow-300" data-i18n="nav.features">功能特点</a>
+            <a href="#how-it-works" class="block py-2 hover:text-yellow-300" data-i18n="nav.howItWorks">如何使用</a>
+            <a href="#faq" class="block py-2 hover:text-yellow-300" data-i18n="nav.faq">常见问题</a>
+            <a href="#download" class="block py-2 hover:text-yellow-300" data-i18n="nav.download">立即下载</a>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero-section bg-gradient-to-b from-indigo-700 to-indigo-900 text-white py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 relative z-10">
+                    <h1 class="text-4xl md:text-5xl font-bold font-inter mb-4" data-i18n="hero.title">钻领钻晶，轻松赚取积分</h1>
+                    <p class="text-xl mb-6 stats-number" data-i18n="hero.slogan">TakeGem, Earn Diamond Points</p>
+                    <p class="text-lg mb-8 opacity-90" data-i18n="hero.description">通过观看广告、完成任务和邀请好友，轻松赚取可兑换奖励的积分。立即开始您的赚钱之旅！</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#download" class="btn-primary bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-bold py-3 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                            <span data-i18n="hero.downloadBtn">立即下载</span>
+                        </a>
+                        <a href="#how-it-works" class="btn-secondary border border-white hover:bg-white/10 text-white py-3 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                            </svg>
+                            <span data-i18n="hero.learnMoreBtn">了解更多</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center relative z-10">
+                    <div class="pulse-glow rounded-xl">
+                        <img src="images/app-preview.svg" alt="TakeGem App Preview" class="max-w-full h-auto rounded-xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能特点 -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold font-inter text-center mb-12" data-i18n="features.title">功能特点</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 功能1 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="icon-container bg-indigo-100 text-indigo-700 p-3 rounded-full inline-block mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold font-inter mb-3" data-i18n="features.watchAds.title">观看广告赚积分</h3>
+                    <p class="text-gray-600" data-i18n="features.watchAds.description">轻松观看广告视频，每次观看都能获得积分奖励，积少成多，轻松赚取收益。</p>
+                </div>
+                
+                <!-- 功能2 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="icon-container bg-indigo-100 text-indigo-700 p-3 rounded-full inline-block mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold font-inter mb-3" data-i18n="features.dailyTasks.title">每日任务</h3>
+                    <p class="text-gray-600" data-i18n="features.dailyTasks.description">完成简单的每日任务，获得额外积分奖励，任务种类丰富多样，满足不同用户需求。</p>
+                </div>
+                
+                <!-- 功能3 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="icon-container bg-indigo-100 text-indigo-700 p-3 rounded-full inline-block mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold font-inter mb-3" data-i18n="features.inviteFriends.title">邀请好友</h3>
+                    <p class="text-gray-600" data-i18n="features.inviteFriends.description">邀请好友加入，双方都能获得奖励，您还能持续获得好友积分的10%作为额外收益。</p>
+                </div>
+                
+                <!-- 功能4 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="icon-container bg-indigo-100 text-indigo-700 p-3 rounded-full inline-block mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold font-inter mb-3" data-i18n="features.rewards.title">丰厚奖励</h3>
+                    <p class="text-gray-600" data-i18n="features.rewards.description">积分可兑换现金、礼品卡和各种实物奖品，100积分=1美元，最低2000积分即可提现。</p>
+                </div>
+                
+                <!-- 功能5 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-indigo-100 text-indigo-700 p-3 rounded-full inline-block mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold font-inter mb-3" data-i18n="features.security.title">安全可靠</h3>
+                    <p class="text-gray-600" data-i18n="features.security.description">严格遵守数据隐私法规，保障用户信息安全，提供透明的积分计算和兑换机制。</p>
+                </div>
+                
+                <!-- 功能6 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-indigo-100 text-indigo-700 p-3 rounded-full inline-block mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold font-inter mb-3" data-i18n="features.easyToUse.title">简单易用</h3>
+                    <p class="text-gray-600" data-i18n="features.easyToUse.description">界面直观友好，操作简单便捷，新用户也能快速上手，轻松开始赚取积分。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 如何使用 -->
+    <section id="how-it-works" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold font-inter text-center mb-12" data-i18n="howItWorks.title">如何使用</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 步骤1 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-indigo-700 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-6">1</div>
+                    <h3 class="text-xl font-bold font-inter mb-3" data-i18n="howItWorks.step1.title">下载并安装</h3>
+                    <p class="text-gray-600" data-i18n="howItWorks.step1.description">从应用商店下载钻领钻晶(TakeGem)应用，完成简单注册即可开始使用。</p>
+                </div>
+                
+                <!-- 步骤2 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-indigo-700 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-6">2</div>
+                    <h3 class="text-xl font-bold font-inter mb-3" data-i18n="howItWorks.step2.title">赚取积分</h3>
+                    <p class="text-gray-600" data-i18n="howItWorks.step2.description">观看广告、完成任务、邀请好友，多种方式轻松赚取积分。</p>
+                </div>
+                
+                <!-- 步骤3 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-indigo-700 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-6">3</div>
+                    <h3 class="text-xl font-bold font-inter mb-3" data-i18n="howItWorks.step3.title">兑换奖励</h3>
+                    <p class="text-gray-600" data-i18n="howItWorks.step3.description">积分达到2000即可兑换现金或礼品卡，轻松变现您的努力。</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <div class="inline-flex items-center bg-white px-6 py-3 rounded-lg shadow-md">
+                    <div class="flex items-center text-yellow-500 mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <p class="text-gray-700" data-i18n="howItWorks.conversionRate">兑换比例：<span class="font-bold text-indigo-700">100积分 = 1美元</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section id="faq" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold font-inter text-center mb-12" data-i18n="faq.title">常见问题</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- 问题1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center" aria-expanded="false">
+                        <h3 class="text-lg font-bold font-inter text-left" data-i18n="faq.howToEarnPoints">如何赚取积分？</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-600 whitespace-pre-line" data-i18n="faq.howToEarnPointsAnswer">您可以通过以下方式赚取积分：
+1. 观看激励视频广告
+2. 完成每日任务
+3. 邀请好友（您好友每日赚取积分的10%将作为奖励发放给您）
+4. 参与平台活动
+5. 好友通过您的邀请链接注册并完成首次广告观看（您将获得额外邀请奖励）</p>
+                    </div>
+                </div>
+                
+                <!-- 问题2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center" aria-expanded="false">
+                        <h3 class="text-lg font-bold font-inter text-left" data-i18n="faq.whatArePointsUsedFor">积分有什么用？</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-600 whitespace-pre-line" data-i18n="faq.whatArePointsUsedForAnswer">积分可按照兑换比例换取奖励。具体规则：
+1. 兑换比例：100积分=1美元
+2. 最低提现门槛：2000积分（相当于20美元）
+3. 兑换类型包括：电子礼品卡、现金提现、应用内虚拟物品及实物商品（以库存为准）</p>
+                    </div>
+                </div>
+                
+                <!-- 问题3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center" aria-expanded="false">
+                        <h3 class="text-lg font-bold font-inter text-left" data-i18n="faq.whyPointsNotArrived">为什么积分没到账？</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-600 whitespace-pre-line" data-i18n="faq.whyPointsNotArrivedAnswer">积分未到账可能有以下原因：
+1. 广告观看未完成或被系统判定为无效观看
+2. 网络延迟导致数据同步延迟（请等待5分钟并刷新）
+3. 邀请奖励需满足：好友当日产生有效积分且账号状态正常
+4. 账号异常或存在作弊行为
+5. 系统维护期间
+
+如问题持续存在，您可通过反馈功能提交详情。</p>
+                    </div>
+                </div>
+                
+                <!-- 问题4 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center" aria-expanded="false">
+                        <h3 class="text-lg font-bold font-inter text-left" data-i18n="faq.howToWithdrawRewards">如何提现或兑换奖励？</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-600 whitespace-pre-line" data-i18n="faq.howToWithdrawRewardsAnswer">当您的积分达到最低兑换标准（2000积分=20美元）时，可按以下步骤操作：
+1. 进入"我的积分"页面
+2. 选择"兑换奖励"并根据提示选择兑换方式（现金/礼品卡等）
+3. 提交兑换申请等待审核（通常24小时内完成）
+
+注：兑换后积分将自动扣除。虚拟奖励即时到账，现金提现到账时间取决于支付渠道（通常1-3个工作日）。</p>
+                    </div>
+                </div>
+                
+                <!-- 问题5 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center" aria-expanded="false">
+                        <h3 class="text-lg font-bold font-inter text-left" data-i18n="faq.whyCantWatchAds">为什么无法观看广告？</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-600 whitespace-pre-line" data-i18n="faq.whyCantWatchAdsAnswer">无法观看广告的可能原因：
+1. 网络连接不稳定或速度过慢
+2. 广告资源临时不足（请稍后再试）
+3. 达到每日观看上限（可参考"任务中心"每日观看次数）
+4. 设备存储空间不足或应用权限未开启（需允许"网络"和"存储"权限）
+5. 应用版本过低（请更新至最新版本）</p>
+                    </div>
+                </div>
+                
+                <!-- 问题6 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <button class="faq-toggle w-full flex justify-between items-center" aria-expanded="false">
+                        <h3 class="text-lg font-bold font-inter text-left" data-i18n="faq.howToInviteFriends">如何邀请好友赚取奖励？</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden mt-4">
+                        <p class="text-gray-600 whitespace-pre-line" data-i18n="faq.howToInviteFriendsAnswer">邀请好友步骤及奖励说明：
+1. 进入"邀请好友"页面获取您的专属邀请码或分享链接
+2. 好友通过您的链接/邀请码注册并登录
+3. 奖励机制：
+   - 好友完成首次广告观看：您和好友各得50积分
+   - 长期奖励：您将自动获得好友每日通过广告赚取积分的10%作为奖励（无上限，好友越活跃，您获得的奖励越多）
+
+奖励将在好友产生积分次日自动发放至您的账户，您可在"积分明细"中查看。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下载区域 -->
+    <section id="download" class="py-16 md:py-24 bg-gradient-to-r from-cyan-700 via-blue-700 to-indigo-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-inter mb-6" data-i18n="download.title">立即下载，开始赚钱</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto opacity-90" data-i18n="download.description">下载钻领钻晶(TakeGem)应用，轻松赚取积分，兑换现金和礼品卡。每天只需几分钟，收益看得见。</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
+                <a href="#" class="download-btn bg-black hover:bg-gray-900 text-white py-4 px-8 rounded-xl shadow-lg transform hover:scale-105 transition-all flex items-center justify-center min-w-[200px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    <div class="text-left">
+                        <div class="text-xs opacity-80" data-i18n="download.appStore">App Store 下载</div>
+                        <div class="text-sm font-bold">iOS</div>
+                    </div>
+                </a>
+                
+                <a href="#" class="download-btn bg-black hover:bg-gray-900 text-white py-4 px-8 rounded-xl shadow-lg transform hover:scale-105 transition-all flex items-center justify-center min-w-[200px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                    </svg>
+                    <div class="text-left">
+                        <div class="text-xs opacity-80" data-i18n="download.googlePlay">Google Play 下载</div>
+                        <div class="text-sm font-bold">Android</div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- 统计数据 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="text-3xl font-bold mb-2 stats-number">50000+</div>
+                    <div class="text-sm opacity-80" data-i18n="download.activeUsers">活跃用户</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold mb-2 stats-number">$500000+</div>
+                    <div class="text-sm opacity-80" data-i18n="download.totalEarnings">累计收益</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold mb-2 stats-number">4.8</div>
+                    <div class="text-sm opacity-80" data-i18n="download.rating">应用评分</div>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <p class="text-lg mb-6" data-i18n="download.qrCode">扫码下载</p>
+                <div class="bg-white p-6 rounded-xl inline-block shadow-lg">
+                    <img src="images/qr-code.svg" alt="QR Code" class="w-32 h-32 mx-auto">
+                    <p class="text-gray-600 text-sm mt-2 text-center">扫码下载应用</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="images/logo.svg" alt="TakeGem Logo" class="h-8 w-auto">
+                        <span class="ml-2 text-lg font-bold font-inter" data-i18n="appName">钻领钻晶</span>
+                    </div>
+                    <p class="text-gray-400 mb-4" data-i18n="footer.slogan">TakeGem, Earn Diamond Points</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold font-inter mb-4" data-i18n="footer.links">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white" data-i18n="nav.features">功能特点</a></li>
+                        <li><a href="#how-it-works" class="text-gray-400 hover:text-white" data-i18n="nav.howItWorks">如何使用</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white" data-i18n="nav.faq">常见问题</a></li>
+                        <li><a href="#download" class="text-gray-400 hover:text-white" data-i18n="nav.download">立即下载</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold font-inter mb-4" data-i18n="footer.legal">法律信息</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white" data-i18n="footer.terms">使用条款</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white" data-i18n="footer.privacy">隐私政策</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white" data-i18n="footer.cookies">Cookie政策</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white" data-i18n="footer.compliance">合规声明</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold font-inter mb-4" data-i18n="footer.contact">联系我们</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <span class="text-gray-400">support@takegem.group</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                            <span class="text-gray-400" data-i18n="footer.appSupport">应用内反馈</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 TakeGem. <span data-i18n="footer.rights">保留所有权利</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

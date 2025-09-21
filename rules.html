@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TakeGem使用规则 - 了解应用使用条款、积分规则、提现规则等重要信息">
+    <meta name="keywords" content="TakeGem使用规则,应用条款,积分规则,提现规则,用户协议">
+    <meta name="author" content="TakeGem Team">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://takegem.github.io/rules.html">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <title>使用规则 - TakeGem</title>
+    <meta name="description" content="钻领钻晶应用使用规则和条款，了解如何正确使用我们的服务">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white">
+    <!-- 导航栏 -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="logo-container">
+                        <svg class="w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1A365D"/>
+                                    <stop offset="100%" style="stop-color:#2563EB"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M16 2L6 8v16l10 6 10-6V8L16 2z" fill="url(#logoGradient)"/>
+                            <path d="M16 8l-6 4v8l6 4 6-4v-8L16 8z" fill="#FFD700" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800" data-translate="app.name">钻领钻晶</span>
+                </div>
+
+                <!-- 桌面端导航 -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-blue-600 transition-colors" data-translate="nav.home">首页</a>
+                    <a href="rules.html" class="nav-link text-blue-600 font-medium" data-translate="nav.rules">使用规则</a>
+                    <a href="privacy.html" class="nav-link text-gray-600 hover:text-blue-600 transition-colors" data-translate="nav.privacy">隐私政策</a>
+                    <button id="languageBtn" class="lang-btn px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 rounded-md transition-colors">
+                        <span id="currentLang">中文</span>
+                    </button>
+                </div>
+
+                <!-- 移动端菜单按钮 -->
+                <button id="mobileMenuBtn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- 移动端菜单 -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors" data-translate="nav.home">首页</a>
+                    <a href="rules.html" class="text-blue-600 font-medium" data-translate="nav.rules">使用规则</a>
+                    <a href="privacy.html" class="text-gray-600 hover:text-blue-600 transition-colors" data-translate="nav.privacy">隐私政策</a>
+                    <button id="mobileLangBtn" class="text-left text-gray-600 hover:text-blue-600 transition-colors">
+                        <span data-translate="nav.language">语言切换</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="pt-20">
+        <!-- 页面标题 -->
+        <section class="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4" data-translate="rules.title">使用规则</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-translate="rules.subtitle">请仔细阅读以下规则，确保正确使用钻领钻晶应用</p>
+            </div>
+        </section>
+
+        <!-- 规则内容 -->
+        <section class="py-16">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <!-- 基本规则 -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6" data-translate="rules.basic.title">基本使用规则</h2>
+                    <div class="bg-white rounded-lg shadow-sm border p-6 space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-blue-600 text-sm font-bold">1</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.basic.rule1">用户必须年满18岁或在监护人同意下使用本应用。</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-blue-600 text-sm font-bold">2</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.basic.rule2">每个用户只能注册一个账户，禁止创建多个账户。</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-blue-600 text-sm font-bold">3</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.basic.rule3">用户需提供真实有效的个人信息进行注册。</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-blue-600 text-sm font-bold">4</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.basic.rule4">禁止使用任何自动化工具或脚本来操作应用。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 积分规则 -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6" data-translate="rules.points.title">积分获取规则</h2>
+                    <div class="bg-white rounded-lg shadow-sm border p-6 space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-green-600 text-sm font-bold">1</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.points.rule1">观看完整广告可获得相应积分，中途退出不计分。</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-green-600 text-sm font-bold">2</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.points.rule2">每日签到可获得额外积分奖励。</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-green-600 text-sm font-bold">3</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.points.rule3">邀请好友成功注册可获得推荐奖励。</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-green-600 text-sm font-bold">4</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.points.rule4">积分有效期为获得后12个月，过期将自动清零。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 提现规则 -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6" data-translate="rules.withdrawal.title">提现兑换规则</h2>
+                    <div class="bg-white rounded-lg shadow-sm border p-6 space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-yellow-600 text-sm font-bold">1</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.withdrawal.rule1">最低提现金额为10元人民币。</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-yellow-600 text-sm font-bold">2</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.withdrawal.rule2">提现申请将在1-3个工作日内处理完成。</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-yellow-600 text-sm font-bold">3</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.withdrawal.rule3">每个用户每月最多可提现5次。</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-yellow-600 text-sm font-bold">4</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.withdrawal.rule4">提现账户信息必须与注册信息一致。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 禁止行为 -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6" data-translate="rules.prohibited.title">禁止行为</h2>
+                    <div class="bg-red-50 rounded-lg border border-red-200 p-6 space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-red-600 text-sm font-bold">×</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.prohibited.rule1">使用外挂、脚本或其他自动化工具。</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-red-600 text-sm font-bold">×</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.prohibited.rule2">恶意刷分或利用系统漏洞获取积分。</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-red-600 text-sm font-bold">×</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.prohibited.rule3">注册多个账户或代他人操作账户。</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <span class="text-red-600 text-sm font-bold">×</span>
+                            </div>
+                            <p class="text-gray-700" data-translate="rules.prohibited.rule4">发布虚假信息或进行欺诈行为。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 违规处理 -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6" data-translate="rules.violations.title">违规处理</h2>
+                    <div class="bg-white rounded-lg shadow-sm border p-6">
+                        <p class="text-gray-700 mb-4" data-translate="rules.violations.description">对于违反使用规则的行为，我们将根据情节严重程度采取以下措施：</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
+                                <span class="text-gray-700" data-translate="rules.violations.warning">警告提醒</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full"></div>
+                                <span class="text-gray-700" data-translate="rules.violations.suspend">暂停账户功能</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-red-500 rounded-full"></div>
+                                <span class="text-gray-700" data-translate="rules.violations.ban">永久封禁账户</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 规则更新 -->
+                <div class="bg-blue-50 rounded-lg border border-blue-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-3" data-translate="rules.updates.title">规则更新说明</h3>
+                    <p class="text-gray-700" data-translate="rules.updates.description">我们保留随时修改和更新使用规则的权利。重要变更将通过应用内通知或官方渠道提前告知用户。继续使用本应用即表示您同意遵守最新的使用规则。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo 和简介 -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <svg class="w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 2L6 8v16l10 6 10-6V8L16 2z" fill="#FFD700"/>
+                            <path d="M16 8l-6 4v8l6 4 6-4v-8L16 8z" fill="#FFA500" opacity="0.8"/>
+                        </svg>
+                        <span class="text-xl font-bold" data-translate="app.name">钻领钻晶</span>
+                    </div>
+                    <p class="text-gray-400 mb-4" data-translate="footer.slogan">让每一次观看都有价值</p>
+                </div>
+
+                <!-- 快速链接 -->
+                <div>
+                    <h4 class="font-bold mb-4" data-translate="footer.quickLinks">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors" data-translate="nav.home">首页</a></li>
+                        <li><a href="rules.html" class="text-gray-400 hover:text-white transition-colors" data-translate="nav.rules">使用规则</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors" data-translate="nav.privacy">隐私政策</a></li>
+                    </ul>
+                </div>
+
+                <!-- 联系我们 -->
+                <div>
+                    <h4 class="font-bold mb-4" data-translate="footer.contact">联系我们</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li data-translate="footer.email">邮箱：support@takegem.com</li>
+                        <li data-translate="footer.wechat">微信：TakeGem2024</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p data-translate="footer.copyright">&copy; 2024 钻领钻晶. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

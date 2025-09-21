@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="terms_page_title">钻领钻晶 - 使用条款</title>
+    <meta name="description" content="钻领钻晶(TakeGem)应用使用条款，用户权利与责任说明">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <!-- 引入字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A365D',
+                        accent: '#FFD700',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-gradient-to-r from-cyan-700 via-blue-700 to-indigo-700 text-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <img src="images/logo.svg" alt="TakeGem Logo" class="h-10">
+                </a>
+                
+                <!-- 桌面导航 -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-accent transition-colors" data-i18n="nav_home">首页</a>
+                    <a href="index.html#features" class="hover:text-accent transition-colors" data-i18n="nav_features">功能特点</a>
+                    <a href="index.html#how-to" class="hover:text-accent transition-colors" data-i18n="nav_how_to">如何使用</a>
+                    <a href="index.html#faq" class="hover:text-accent transition-colors" data-i18n="nav_faq">常见问题</a>
+                    <a href="rules.html" class="hover:text-accent transition-colors" data-i18n="nav_rules">积分规则</a>
+                    <a href="index.html#download" class="bg-accent text-primary px-4 py-2 rounded-full font-bold hover-scale" data-i18n="nav_download">立即下载</a>
+                </div>
+                
+                <!-- 语言切换 -->
+                <button id="language-toggle" class="px-3 py-1 rounded-full border border-white text-sm">EN</button>
+                
+                <!-- 移动端菜单按钮 -->
+                <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- 移动端菜单 -->
+            <div id="mobile-menu" class="md:hidden hidden pt-4 pb-2">
+                <a href="index.html" class="block py-2 hover:text-accent transition-colors" data-i18n="nav_home">首页</a>
+                <a href="index.html#features" class="block py-2 hover:text-accent transition-colors" data-i18n="nav_features">功能特点</a>
+                <a href="index.html#how-to" class="block py-2 hover:text-accent transition-colors" data-i18n="nav_how_to">如何使用</a>
+                <a href="index.html#faq" class="block py-2 hover:text-accent transition-colors" data-i18n="nav_faq">常见问题</a>
+                <a href="rules.html" class="block py-2 hover:text-accent transition-colors" data-i18n="nav_rules">积分规则</a>
+                <a href="index.html#download" class="block py-2 mt-2 bg-accent text-primary px-4 rounded-full font-bold text-center" data-i18n="nav_download">立即下载</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面内容 -->
+    <main class="container mx-auto px-4 pt-24 pb-16">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6 md:p-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-center mb-8 text-primary" data-i18n="terms_title">使用条款</h1>
+            
+            <div class="text-right mb-4">
+                <p class="text-sm text-gray-500" data-i18n="last_updated">最后更新：2023年12月1日</p>
+            </div>
+            
+            <section class="mb-8">
+                <p class="mb-4" data-i18n="terms_intro">
+                    欢迎使用钻领钻晶应用（"应用"）。本使用条款（"条款"）是您与TakeGem Group Limited（"我们"、"我们的"或"公司"）之间的协议，规定了您使用我们的应用和服务的条件。请在使用我们的应用前仔细阅读这些条款。
+                </p>
+                <p class="mb-4" data-i18n="terms_acceptance">
+                    通过下载、安装或使用钻领钻晶应用，您确认您已阅读、理解并同意受这些条款的约束。如果您不同意这些条款的任何部分，请勿使用我们的应用。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="eligibility_title">使用资格</h2>
+                <p class="mb-4" data-i18n="eligibility_text">
+                    您必须年满13岁才能使用我们的应用。如果您未满18岁，您必须在父母或法定监护人的监督下使用本应用，并且他们必须同意这些条款。通过使用本应用，您声明并保证您符合这些年龄要求。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="account_title">用户账户</h2>
+                <p class="mb-4" data-i18n="account_text">
+                    要使用我们的某些功能，您可能需要创建一个账户。您同意提供准确、完整和最新的信息，并对保持您的账户信息的准确性和完整性负责。您负责保护您的账户凭证的安全，并对通过您的账户进行的所有活动负全部责任。如果您发现任何未经授权的使用或安全漏洞，请立即通知我们。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="points_title">钻石积分</h2>
+                <p class="mb-4" data-i18n="points_text">
+                    我们的应用允许用户通过完成特定活动（如观看广告）来赚取钻石积分。这些积分可以根据我们的积分规则兑换为现金或其他奖励。钻石积分没有货币价值，仅在我们的应用内有效。我们保留随时修改积分赚取率、兑换率和可用奖励的权利，恕不另行通知。
+                </p>
+                <p class="mb-4" data-i18n="points_rules">
+                    有关钻石积分的详细规则，请参阅我们的<a href="rules.html" class="text-blue-600 hover:underline">积分规则</a>页面。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="prohibited_title">禁止行为</h2>
+                <p class="mb-4" data-i18n="prohibited_text">
+                    使用我们的应用时，您同意不会：
+                </p>
+                <ul class="list-disc pl-6 mb-4 space-y-2">
+                    <li data-i18n="prohibited_1">使用自动化工具、机器人或脚本来赚取积分或与应用互动</li>
+                    <li data-i18n="prohibited_2">尝试欺骗或操纵我们的积分系统</li>
+                    <li data-i18n="prohibited_3">创建多个账户以获取额外积分或奖励</li>
+                    <li data-i18n="prohibited_4">分发恶意软件或尝试破解、反编译或逆向工程我们的应用</li>
+                    <li data-i18n="prohibited_5">使用我们的应用进行任何非法活动或违反任何适用法律</li>
+                    <li data-i18n="prohibited_6">干扰或破坏我们的服务或连接到我们服务的服务器和网络</li>
+                    <li data-i18n="prohibited_7">规避、禁用或以其他方式干扰应用的安全相关功能</li>
+                    <li data-i18n="prohibited_8">收集或存储其他用户的个人数据</li>
+                </ul>
+                <p class="mb-4" data-i18n="prohibited_consequences">
+                    违反这些禁止行为可能导致暂停或终止您的账户，以及积分和奖励的没收。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="intellectual_property_title">知识产权</h2>
+                <p class="mb-4" data-i18n="intellectual_property_text">
+                    应用及其原始内容、功能和功能是并将保持为公司及其许可方的专有财产。本应用受版权、商标和其他国内外法律保护。未经我们明确书面许可，不得复制、修改、创建衍生作品、公开展示、公开表演、重新发布、下载、存储或传输本应用的任何部分。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="third_party_title">第三方内容和广告</h2>
+                <p class="mb-4" data-i18n="third_party_text">
+                    我们的应用可能包含来自第三方的内容，包括广告和链接到其他网站或应用。我们不对任何第三方内容、广告、产品或服务的准确性、适当性或可靠性负责。您与这些第三方的任何互动完全由您自行承担风险，我们对此类互动不承担任何责任。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="disclaimer_title">免责声明</h2>
+                <p class="mb-4" data-i18n="disclaimer_text">
+                    我们的应用按"原样"和"可用"提供，不提供任何明示或暗示的保证。在法律允许的最大范围内，我们否认所有保证，包括但不限于适销性、特定用途适用性和非侵权的暗示保证。
+                </p>
+                <p class="mb-4" data-i18n="disclaimer_availability">
+                    我们不保证应用将始终可用、安全或无错误，或者应用将满足您的要求。我们可能会不时进行维护或更新，这可能会导致应用暂时不可用。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="limitation_liability_title">责任限制</h2>
+                <p class="mb-4" data-i18n="limitation_liability_text">
+                    在法律允许的最大范围内，无论在任何情况下，我们均不对任何直接、间接、附带、特殊、后果性或惩罚性损害负责，包括但不限于利润损失、商誉损失、数据损失、替代商品或服务的采购成本，或任何其他无形损失，无论是基于保证、合同、侵权（包括疏忽）、产品责任或任何其他法律理论，无论我们是否被告知此类损害的可能性。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="indemnification_title">赔偿</h2>
+                <p class="mb-4" data-i18n="indemnification_text">
+                    您同意赔偿、辩护并使我们及我们的关联公司、高管、董事、员工、代理人、许可方和服务提供商免受任何索赔、损害、义务、损失、责任、成本或债务以及费用（包括但不限于律师费）的影响，这些索赔、损害、义务、损失、责任、成本或债务以及费用源于：(a) 您使用和访问应用；(b) 您违反这些条款的任何部分；或 (c) 您侵犯任何第三方的权利，包括但不限于知识产权。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="termination_title">终止</h2>
+                <p class="mb-4" data-i18n="termination_text">
+                    我们可以在任何时候因任何原因终止或暂停您对我们应用的访问，包括但不限于违反这些条款。终止后，您使用应用的权利将立即停止。所有在终止后仍然有效的条款将继续有效，包括但不限于所有权条款、免责声明、赔偿和责任限制。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="changes_title">条款变更</h2>
+                <p class="mb-4" data-i18n="changes_text">
+                    我们保留随时修改或替换这些条款的权利。如果修改是重大的，我们将尝试提前至少30天通知您。什么构成重大变更将由我们自行决定。通过在我们发布修改后继续访问或使用我们的应用，您同意受修改后的条款约束。如果您不同意新条款，您必须停止使用应用。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="governing_law_title">适用法律</h2>
+                <p class="mb-4" data-i18n="governing_law_text">
+                    这些条款应受新加坡法律管辖并按其解释，不考虑其冲突法规定。您同意新加坡法院对与这些条款相关的任何争议具有专属管辖权。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="severability_title">可分割性</h2>
+                <p class="mb-4" data-i18n="severability_text">
+                    如果这些条款的任何条款被认为是非法、无效或因任何原因不可执行，则该条款应被视为可与这些条款分割，并且不影响任何其余条款的有效性和可执行性。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="entire_agreement_title">完整协议</h2>
+                <p class="mb-4" data-i18n="entire_agreement_text">
+                    这些条款构成您与我们之间关于我们应用的完整协议，并取代所有先前或同时的书面或口头理解、协议、陈述和保证。
+                </p>
+            </section>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-primary" data-i18n="contact_us_title">联系我们</h2>
+                <p class="mb-4" data-i18n="contact_us_text">
+                    如果您对这些使用条款有任何问题或建议，请通过以下方式联系我们：
+                </p>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="mb-2"><strong data-i18n="company_name">公司名称：</strong> TakeGem Group Limited</p>
+                    <p class="mb-2"><strong data-i18n="email_address">电子邮件：</strong> terms@takegem.group</p>
+                    <p class="mb-2"><strong data-i18n="postal_address">邮寄地址：</strong> 123 Global Plaza, Suite 456, Singapore 123456</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <img src="images/logo.svg" alt="TakeGem Logo" class="h-10 mb-2">
+                    <p class="text-sm opacity-75" data-i18n="footer_rights">© 2023 钻领钻晶 版权所有</p>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+                    <a href="privacy.html" class="text-sm hover:text-accent transition-colors" data-i18n="footer_privacy">隐私政策</a>
+                    <a href="terms.html" class="text-sm hover:text-accent transition-colors font-bold" data-i18n="footer_terms">使用条款</a>
+                    <a href="mailto:contact@takegem.group" class="text-sm hover:text-accent transition-colors" data-i18n="footer_contact">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // 扩展翻译对象，添加使用条款页面特有的翻译
+        translations.zh = {
+            ...translations.zh,
+            'terms_page_title': '钻领钻晶 - 使用条款',
+            'terms_title': '使用条款',
+            'last_updated': '最后更新：2023年12月1日',
+            'terms_intro': '欢迎使用钻领钻晶应用（"应用"）。本使用条款（"条款"）是您与TakeGem Group Limited（"我们"、"我们的"或"公司"）之间的协议，规定了您使用我们的应用和服务的条件。请在使用我们的应用前仔细阅读这些条款。',
+            'terms_acceptance': '通过下载、安装或使用钻领钻晶应用，您确认您已阅读、理解并同意受这些条款的约束。如果您不同意这些条款的任何部分，请勿使用我们的应用。',
+            'eligibility_title': '使用资格',
+            'eligibility_text': '您必须年满13岁才能使用我们的应用。如果您未满18岁，您必须在父母或法定监护人的监督下使用本应用，并且他们必须同意这些条款。通过使用本应用，您声明并保证您符合这些年龄要求。',
+            'account_title': '用户账户',
+            'account_text': '要使用我们的某些功能，您可能需要创建一个账户。您同意提供准确、完整和最新的信息，并对保持您的账户信息的准确性和完整性负责。您负责保护您的账户凭证的安全，并对通过您的账户进行的所有活动负全部责任。如果您发现任何未经授权的使用或安全漏洞，请立即通知我们。',
+            'points_title': '钻石积分',
+            'points_text': '我们的应用允许用户通过完成特定活动（如观看广告）来赚取钻石积分。这些积分可以根据我们的积分规则兑换为现金或其他奖励。钻石积分没有货币价值，仅在我们的应用内有效。我们保留随时修改积分赚取率、兑换率和可用奖励的权利，恕不另行通知。',
+            'points_rules': '有关钻石积分的详细规则，请参阅我们的<a href="rules.html" class="text-blue-600 hover:underline">积分规则</a>页面。',
+            'prohibited_title': '禁止行为',
+            'prohibited_text': '使用我们的应用时，您同意不会：',
+            'prohibited_1': '使用自动化工具、机器人或脚本来赚取积分或与应用互动',
+            'prohibited_2': '尝试欺骗或操纵我们的积分系统',
+            'prohibited_3': '创建多个账户以获取额外积分或奖励',
+            'prohibited_4': '分发恶意软件或尝试破解、反编译或逆向工程我们的应用',
+            'prohibited_5': '使用我们的应用进行任何非法活动或违反任何适用法律',
+            'prohibited_6': '干扰或破坏我们的服务或连接到我们服务的服务器和网络',
+            'prohibited_7': '规避、禁用或以其他方式干扰应用的安全相关功能',
+            'prohibited_8': '收集或存储其他用户的个人数据',
+            'prohibited_consequences': '违反这些禁止行为可能导致暂停或终止您的账户，以及积分和奖励的没收。',
+            'intellectual_property_title': '知识产权',
+            'intellectual_property_text': '应用及其原始内容、功能和功能是并将保持为公司及其许可方的专有财产。本应用受版权、商标和其他国内外法律保护。未经我们明确书面许可，不得复制、修改、创建衍生作品、公开展示、公开表演、重新发布、下载、存储或传输本应用的任何部分。',
+            'third_party_title': '第三方内容和广告',
+            'third_party_text': '我们的应用可能包含来自第三方的内容，包括广告和链接到其他网站或应用。我们不对任何第三方内容、广告、产品或服务的准确性、适当性或可靠性负责。您与这些第三方的任何互动完全由您自行承担风险，我们对此类互动不承担任何责任。',
+            'disclaimer_title': '免责声明',
+            'disclaimer_text': '我们的应用按"原样"和"可用"提供，不提供任何明示或暗示的保证。在法律允许的最大范围内，我们否认所有保证，包括但不限于适销性、特定用途适用性和非侵权的暗示保证。',
+            'disclaimer_availability': '我们不保证应用将始终可用、安全或无错误，或者应用将满足您的要求。我们可能会不时进行维护或更新，这可能会导致应用暂时不可用。',
+            'limitation_liability_title': '责任限制',
+            'limitation_liability_text': '在法律允许的最大范围内，无论在任何情况下，我们均不对任何直接、间接、附带、特殊、后果性或惩罚性损害负责，包括但不限于利润损失、商誉损失、数据损失、替代商品或服务的采购成本，或任何其他无形损失，无论是基于保证、合同、侵权（包括疏忽）、产品责任或任何其他法律理论，无论我们是否被告知此类损害的可能性。',
+            'indemnification_title': '赔偿',
+            'indemnification_text': '您同意赔偿、辩护并使我们及我们的关联公司、高管、董事、员工、代理人、许可方和服务提供商免受任何索赔、损害、义务、损失、责任、成本或债务以及费用（包括但不限于律师费）的影响，这些索赔、损害、义务、损失、责任、成本或债务以及费用源于：(a) 您使用和访问应用；(b) 您违反这些条款的任何部分；或 (c) 您侵犯任何第三方的权利，包括但不限于知识产权。',
+            'termination_title': '终止',
+            'termination_text': '我们可以在任何时候因任何原因终止或暂停您对我们应用的访问，包括但不限于违反这些条款。终止后，您使用应用的权利将立即停止。所有在终止后仍然有效的条款将继续有效，包括但不限于所有权条款、免责声明、赔偿和责任限制。',
+            'changes_title': '条款变更',
+            'changes_text': '我们保留随时修改或替换这些条款的权利。如果修改是重大的，我们将尝试提前至少30天通知您。什么构成重大变更将由我们自行决定。通过在我们发布修改后继续访问或使用我们的应用，您同意受修改后的条款约束。如果您不同意新条款，您必须停止使用应用。',
+            'governing_law_title': '适用法律',
+            'governing_law_text': '这些条款应受新加坡法律管辖并按其解释，不考虑其冲突法规定。您同意新加坡法院对与这些条款相关的任何争议具有专属管辖权。',
+            'severability_title': '可分割性',
+            'severability_text': '如果这些条款的任何条款被认为是非法、无效或因任何原因不可执行，则该条款应被视为可与这些条款分割，并且不影响任何其余条款的有效性和可执行性。',
+            'entire_agreement_title': '完整协议',
+            'entire_agreement_text': '这些条款构成您与我们之间关于我们应用的完整协议，并取代所有先前或同时的书面或口头理解、协议、陈述和保证。',
+            'contact_us_title': '联系我们',
+            'contact_us_text': '如果您对这些使用条款有任何问题或建议，请通过以下方式联系我们：',
+            'company_name': '公司名称：',
+            'email_address': '电子邮件：',
+            'postal_address': '邮寄地址：'
+        };
+        
+        translations.en = {
+            ...translations.en,
+            'terms_page_title': 'TakeGem - Terms of Use',
+            'terms_title': 'Terms of Use',
+            'last_updated': 'Last Updated: December 1, 2023',
+            'terms_intro': 'Welcome to the TakeGem application ("App"). These Terms of Use ("Terms") are an agreement between you and TakeGem Group Limited ("we," "our," or "Company") that governs your use of our App and services. Please read these Terms carefully before using our App.',
+            'terms_acceptance': 'By downloading, installing, or using the TakeGem App, you confirm that you have read, understood, and agree to be bound by these Terms. If you do not agree to any part of these Terms, please do not use our App.',
+            'eligibility_title': 'Eligibility',
+            'eligibility_text': 'You must be at least 13 years old to use our App. If you are under 18 years old, you must use this App under the supervision of a parent or legal guardian who agrees to these Terms. By using this App, you represent and warrant that you meet these age requirements.',
+            'account_title': 'User Accounts',
+            'account_text': 'To use certain features of our App, you may need to create an account. You agree to provide accurate, complete, and up-to-date information and are responsible for maintaining the accuracy and completeness of your account information. You are responsible for safeguarding the security of your account credentials and are fully responsible for all activities that occur under your account. If you discover any unauthorized use or security breach, please notify us immediately.',
+            'points_title': 'Diamond Points',
+            'points_text': 'Our App allows users to earn Diamond Points by completing certain activities, such as watching advertisements. These points can be redeemed for cash or other rewards according to our points rules. Diamond Points have no monetary value and are valid only within our App. We reserve the right to modify the point earning rates, redemption rates, and available rewards at any time without notice.',
+            'points_rules': 'For detailed rules about Diamond Points, please refer to our <a href="rules.html" class="text-blue-600 hover:underline">Points Rules</a> page.',
+            'prohibited_title': 'Prohibited Conduct',
+            'prohibited_text': 'When using our App, you agree not to:',
+            'prohibited_1': 'Use automated tools, bots, or scripts to earn points or interact with the App',
+            'prohibited_2': 'Attempt to cheat or manipulate our points system',
+            'prohibited_3': 'Create multiple accounts to gain additional points or rewards',
+            'prohibited_4': 'Distribute malware or attempt to hack, decompile, or reverse engineer our App',
+            'prohibited_5': 'Use our App for any illegal activities or in violation of any applicable laws',
+            'prohibited_6': 'Interfere with or disrupt our services or servers and networks connected to our services',
+            'prohibited_7': 'Circumvent, disable, or otherwise interfere with security-related features of the App',
+            'prohibited_8': 'Collect or store personal data about other users',
+            'prohibited_consequences': 'Violation of these prohibited conducts may result in suspension or termination of your account and forfeiture of points and rewards.',
+            'intellectual_property_title': 'Intellectual Property',
+            'intellectual_property_text': 'The App and its original content, features, and functionality are and will remain the exclusive property of the Company and its licensors. The App is protected by copyright, trademark, and other laws of both the country and foreign countries. No part of this App may be reproduced, modified, created derivative works from, publicly displayed, publicly performed, republished, downloaded, stored, or transmitted without our express written permission.',
+            'third_party_title': 'Third-Party Content and Advertisements',
+            'third_party_text': 'Our App may contain content from third parties, including advertisements and links to other websites or applications. We are not responsible for the accuracy, appropriateness, or reliability of any third-party content, advertisements, products, or services. Any interactions you have with these third parties are entirely at your own risk, and we assume no responsibility for such interactions.',
+            'disclaimer_title': 'Disclaimer',
+            'disclaimer_text': 'Our App is provided on an "as is" and "as available" basis without any warranties of any kind. To the maximum extent permitted by law, we disclaim all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.',
+            'disclaimer_availability': 'We do not guarantee that the App will always be available, secure, or error-free, or that the App will meet your requirements. We may conduct maintenance or updates from time to time, which may result in temporary unavailability of the App.',
+            'limitation_liability_title': 'Limitation of Liability',
+            'limitation_liability_text': 'To the maximum extent permitted by law, in no event shall we be liable for any direct, indirect, incidental, special, consequential, or punitive damages, including but not limited to, loss of profits, loss of goodwill, loss of data, cost of procurement of substitute goods or services, or any other intangible losses, whether based on warranty, contract, tort (including negligence), product liability, or any other legal theory, regardless of whether we have been advised of the possibility of such damages.',
+            'indemnification_title': 'Indemnification',
+            'indemnification_text': 'You agree to indemnify, defend, and hold harmless us and our affiliates, officers, directors, employees, agents, licensors, and service providers from and against any claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney\'s fees) arising from: (a) your use of and access to the App; (b) your violation of any portion of these Terms; or (c) your violation of any third party rights, including but not limited to intellectual property rights.',
+            'termination_title': 'Termination',
+            'termination_text': 'We may terminate or suspend your access to our App at any time, for any reason, including but not limited to a breach of these Terms. Upon termination, your right to use the App will immediately cease. All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.',
+            'changes_title': 'Changes to Terms',
+            'changes_text': 'We reserve the right to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days\' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion. By continuing to access or use our App after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you must stop using the App.',
+            'governing_law_title': 'Governing Law',
+            'governing_law_text': 'These Terms shall be governed by and construed in accordance with the laws of Singapore, without regard to its conflict of law provisions. You agree that the courts in Singapore shall have exclusive jurisdiction over any disputes relating to these Terms.',
+            'severability_title': 'Severability',
+            'severability_text': 'If any provision of these Terms is held to be unlawful, void, or for any reason unenforceable, then that provision shall be deemed severable from these Terms and shall not affect the validity and enforceability of any remaining provisions.',
+            'entire_agreement_title': 'Entire Agreement',
+            'entire_agreement_text': 'These Terms constitute the entire agreement between you and us regarding our App and supersede all prior and contemporaneous written or oral understandings, agreements, representations, and warranties.',
+            'contact_us_title': 'Contact Us',
+            'contact_us_text': 'If you have any questions or suggestions about these Terms of Use, please contact us at:',
+            'company_name': 'Company Name:',
+            'email_address': 'Email:',
+            'postal_address': 'Postal Address:'
+        };
+    </script>
+</body>
+</html>
